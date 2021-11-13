@@ -1,4 +1,4 @@
-/* Copyright 2020 drhigsby
+/* Copyright 2020 koboldMaki
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,7 +15,6 @@
  */
 #include "duzboard.h"
 
-
 void matrix_init_kb(void) {
     //matrix_init_user();
 
@@ -23,4 +22,7 @@ void matrix_init_kb(void) {
 #define LED_POWER C5
     setPinOutput(LED_POWER);
     writePinHigh(LED_POWER);
+}
+
+void matrix_scan_user(void) {
 }
