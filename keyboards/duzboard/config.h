@@ -18,11 +18,17 @@
 //#include "config_common.h"
 
 /* USB Device descriptor parameter */
+
+#undef MANUFACTURER
 #define MANUFACTURER KoboldMaki
+#undef PRODUCT
 #define PRODUCT duzboard
-#define VENDOR_ID 0x0420
-#define PRODUCT_ID 0x0420
-#define DEVICE_VER 0x0420
+#undef VENDOR_ID
+#define VENDOR_ID 0x1209
+#undef PRODUCT_ID
+#define PRODUCT_ID 0x345C
+#undef DEVICE_VER
+#define DEVICE_VER 0x0001
 
 /* key matrix size */
 #define MATRIX_ROWS 5
@@ -31,18 +37,20 @@
 /* key matrix pins */
 //s#define MATRIX_ROW_PINS { D3, C3, C4, C6, D2}
 //#define MATRIX_COL_PINS { B3, D1, C0, D5, C1, B2, D4, B0, D7, A12, A13, B17, B16, D0, B1, C2, D6  }
-#define MATRIX_ROW_PINS { D3, C3, C4, C6, D2}
-#define MATRIX_COL_PINS { B3, D1, C0, D5, C1, B2, D4, B0, D7, A12, A13, B17, B16, D0, B1, C2, D6  }
+#define MATRIX_ROW_PINS { A16, B18, B19, B10, B11}
+#define MATRIX_COL_PINS { B16, B17, D0, A12, A13, D7, D4, D2, D3, C3, C4, C6, C7, E26, A5, A14, A15  }
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
+
+#undef DEBOUNCE
+#define DEBOUNCE 20
+
+#define IGNORE_MOD_TAP_INTERRUPT
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
-#define LOCKING_RESYNC_ENABLE
 #define USB_POLLING_INTERVAL_MS 1
 #define EEPROM_SIZE 4096
