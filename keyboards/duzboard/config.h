@@ -44,6 +44,11 @@
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
+/* Encoder Pins, Resolution */
+#define ENCODERS_PAD_A { C9 }
+#define ENCODERS_PAD_B { C8 }
+#define ENCODER_RESOLUTION 4
+
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 
 #undef DEBOUNCE

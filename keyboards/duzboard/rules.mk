@@ -18,3 +18,4 @@ AUDIO_ENABLE = no           # Audio output
 LTO_ENABLE = no             # Use link time optimization
 
 FIRMWARE_FORMAT = hex
+ENCODER_ENABLE = yes
