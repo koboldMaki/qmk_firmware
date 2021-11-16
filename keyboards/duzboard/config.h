@@ -35,8 +35,6 @@
 #define MATRIX_COLS 17
 
 /* key matrix pins */
-//s#define MATRIX_ROW_PINS { D3, C3, C4, C6, D2}
-//#define MATRIX_COL_PINS { B3, D1, C0, D5, C1, B2, D4, B0, D7, A12, A13, B17, B16, D0, B1, C2, D6  }
 #define MATRIX_ROW_PINS { A16, B18, B19, B10, B11}
 #define MATRIX_COL_PINS { B16, B17, D0, A12, A13, D7, D4, D2, D3, C3, C4, C6, C7, E26, A5, A14, A15  }
 #define UNUSED_PINS
@@ -52,8 +50,7 @@
 /* LED Settings */
 #define RGB_DI_PIN D5
 #define DRIVER_LED_TOTAL 6
-#define RGBLED_NUM 6
-
+#define RGB_MATRIX_KEYPRESSES
 #define NOP_FUDGE 0.4
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */

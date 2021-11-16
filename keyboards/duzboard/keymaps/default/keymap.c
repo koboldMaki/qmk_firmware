@@ -75,3 +75,11 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     }
     return false;
 }
+
+void matrix_init_user(void) {
+  enum rgb_matrix_effects {
+      RGB_MATRIX_SOLID_COLOR = 1,
+      RGB_MATRIX_SOLID_REACTIVE,
+      RGB_MATRIX_EFFECT_MAX
+  };
+}
