@@ -49,8 +49,14 @@
 #define ENCODERS_PAD_B { C8 }
 #define ENCODER_RESOLUTION 4
 
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
+/* LED Settings */
+#define RGB_DI_PIN D5
+#define DRIVER_LED_TOTAL 6
+#define RGBLED_NUM 6
 
+#define NOP_FUDGE 0.4
+
+/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #undef DEBOUNCE
 #define DEBOUNCE 20
 
